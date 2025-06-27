@@ -4,9 +4,16 @@ import 'bus_arrival_page.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: BusDashboardPage(),
+    home: BusArrivalPage(),
     debugShowCheckedModeBanner: false,
-    theme: ThemeData(primarySwatch: Colors.blue),
+    theme: ThemeData(
+      primarySwatch: Colors.blue,
+      fontFamily: 'SFProDisplay',
+      textTheme: ThemeData.light().textTheme.copyWith(
+        titleLarge: TextStyle(fontFamily: 'SFProDisplay', fontWeight: FontWeight.bold),
+        bodyMedium: TextStyle(fontFamily: 'SFProDisplay'),
+      ),
+    ),
     routes: {
       '/bus-arrival': (context) => BusArrivalPage(),
     },
