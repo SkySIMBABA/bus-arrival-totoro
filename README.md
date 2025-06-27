@@ -4,6 +4,9 @@ A cute, modern Flutter app to check Singapore bus arrival times, inspired by Tot
 
 ![Totoro Banner](https://pngimg.com/d/totoro_PNG16.png)
 
+## 🌐 Live Demo
+**[Try the app online!](https://skysimbaba.github.io/bus-arrival-totoro/)**
+
 ## Features
 
 - 🚌 See how many minutes left until the next buses arrive at your stop
@@ -33,6 +36,16 @@ flutter run -d windows   # or -d android, -d ios
 ```
 
 > Note: The LTA API does not support CORS, so live data only works on mobile/desktop. Web uses mock data for a smooth demo.
+
+## Deployment
+
+This app is automatically deployed to GitHub Pages using GitHub Actions. Every push to the `main` branch triggers a new build and deployment.
+
+### Manual Deployment
+```sh
+flutter build web
+# The build output is in build/web/
+```
 
 ## Project Structure
 - `lib/bus_arrival_page.dart` — Main Totoro bus arrival UI
